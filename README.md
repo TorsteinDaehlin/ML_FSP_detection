@@ -8,11 +8,11 @@ Stay tuned for details.
 
 ## Using the classifier
 ### Requirements
-The classifier was created using MATLAB(R) R2022b and their Statistics and Machine Learning Toolbox(TM). The enclosed code may not work with previous versions of MATLAB(R) or without the Statistics and Machine Learning Toolbox(TM). 
+The classifier was created using MATLAB&reg; R2022b and their Statistics and Machine Learning Toolbox&trade;. The enclosed code may not work with previous versions of MATLAB&reg; or without the Statistics and Machine Learning Toolbox&trade;. 
 
 ### Usage
 1. Fork and clone this repository to your machine.
-2. Open MATLAB(R) and navigate to your cloned repository.
+2. Open MATLAB&reg; and navigate to your cloned repository.
 3. Execute `ClassificationExample.m`. This script generates a set of 100 normally distributed example foot strike angles with a realistic mean and standard deviation, and uses the KNN model to classify the individual observations as either "Rearfoot", "Midfoot", or "Forefoot" strikes. A plot is generated to illustrate the resulting classifications. **Please note** that **input data** generated in and used for this example are fictitous and do not correspond to real data collected for this study. It is for illustration purposes only. However, the KNN classification model provided in `knn_fsp_classifier.mat` is trained on real-world data and validated against criterion data obtained by visual classification of foot strike patterns. 
 
 ## License
