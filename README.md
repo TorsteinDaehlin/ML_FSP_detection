@@ -16,7 +16,7 @@ The classifier was created using MATLAB(R) R2022b and their Statistics and Machi
 3. Execute `ClassificationExample.m`. This script generates a set of 100 normally distributed example foot strike angles with a realistic mean and standard deviation, and uses the KNN model to classify the individual observations as either "Rearfoot", "Midfoot", or "Forefoot" strikes. A plot is generated to illustrate the resulting classifications. **Please note** that **input data** generated in and used for this example are fictitous and do not correspond to real data collected for this study. It is for illustration purposes only. However, the KNN classification model provided in `knn_fsp_classifier.mat` is trained on real-world data and validated against criterion data obtained by visual classification of foot strike patterns. 
 
 ## License
-The KNN classifier and example code is provided under an Apache-2.0 license. Please view the `LICENSE` file in this repository for details.
+The KNN classifier and example code is provided under an Apache-2.0 license. Please view the [`LICENSE`](https://github.com/TorsteinDaehlin/KNNfootstrikepattern/blob/main/LICENSE) file in this repository for details.
 
 ## Disclaimer
 This work is provided on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing this work and assume any risks associated with your exercise of permissions under this License.
