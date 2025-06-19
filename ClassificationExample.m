@@ -15,12 +15,12 @@
 % limitations under the License.                                           %
 % ------------------------------------------------------------------------ %                                                            
 %                                                                          %
-% ClassificationExample.m creates a sample of normally distributed "dummy" %
-% foot strike angles based on experimental means and standard deviations   %
-% and uses these values to illustrate how the machine learning classifiers %
-% in fsp_classifiers.mat can be used to classify foot strike patterns.     %
-% The funcition takes no input and produces a grouped scatter plot to      %
-% illustrate the results of the classification example as output.          %
+% ClassificationExample.m creates a sample of multimodally distributed     %
+% example foot strike angles based on experimental means and standard      % 
+% deviations and uses these values to illustrate how the machine learning  %
+% classifiers in fsp_classifiers.mat can be used to classify foot strike   % 
+% patterns. The funcition takes no input and produces a grouped scatter    %
+% plot to illustrate the results of the classification example as output.  %
 % -------------------------------------------------------------------------%
 
 function ClassificationExample()
@@ -69,40 +69,23 @@ tbl = table(fsa, excursion, velocity, fsp_fsa, fsp_fsa_excursion, fsp_all);
 
 % Plot results
 figure('Units', 'normalized', 'Position', [0.1 0.3 0.7 0.4]);
-tiledlayout(1,3);
-nexttile;
+tiledlayout(4,3);
+nexttile();
 scatter(tbl, 'fsa', 'fsa', 'filled', 'ColorVariable', 'fsp_fsa', ...
     'MarkerEdgeColor', 'k');
-xlabel('Foot strike angle $(^{\circ})$', 'Interpreter', 'latex');
-ylabel('Foot strike angle $(^{\circ})$', 'Interpreter', 'latex');
+xlabel('Angle $(^{\circ})$', 'Interpreter', 'latex');
+ylabel('Angle $(^{\circ})$', 'Interpreter', 'latex');
 
 nexttile;
 scatter(tbl,'fsa','excursion','filled','ColorVariable','fsp_fsa_excursion', ...
     'MarkerEdgeColor', 'k');
-xlabel('Foot strike angle $(^{\circ})$', 'Interpreter', 'latex');
-ylabel('Foot angle excursion $(^{\circ})$', 'Interpreter', 'latex');
+xlabel('Angle $(^{\circ})$', 'Interpreter', 'latex');
+ylabel('Excursion $(^{\circ})$', 'Interpreter', 'latex');
 
 nexttile;
 scatter3(tbl,'fsa','excursion','velocity','filled','ColorVariable','fsp_all', ......
     'MarkerEdgeColor', 'k');
-xlabel('Foot strike angle $(^{\circ})$', 'Interpreter', 'latex');
-ylabel('Foot angle excursion $(^{\circ})$', 'Interpreter', 'latex');
-zlabel('Foot angular velocity $(^{\circ} \cdot s^{-1})$', 'Interpreter', 'latex');
-
-% h = gscatter(fsa, fsa, fsp_fsa, 'k', mrk_shape);
-% for i = 1: length(h)
-%     h(i).MarkerFaceColor = mrk_color(i,:);
-% end
-
-% Annotate plot
-title('Foot strike classification', 'Interpreter', 'latex');
-xlabel('Foot strike angle $(^{\circ})$', 'Interpreter', 'latex');
-ylabel('Foot strike angle $(^{\circ})$', 'Interpreter', 'latex');
-
-end
-
-function DrawPlot(data, fsp)
-
-
-
+xlabel('Angle $(^{\circ})$', 'Interpreter', 'latex');
+ylabel('Excursion $(^{\circ})$', 'Interpreter', 'latex');
+zlabel('Angular velocity $(deg \cdot s^{-1})$', 'Interpreter', 'latex');
 end
