@@ -4,7 +4,9 @@ This repositor contains three trained machine learning (ML) classifiers that can
 If you have questions about the enclosed code, please email [Dr. Torstein E. Dæhlin](mailto:daehlin@usf.edu).
 
 ## Publication
-Stay tuned for details.
+If you use these classifiers for scientific research, please cite:
+
+Dæhlin, T. E., Johnson, C. D., Foulis, S. A., Hughes, J. M., & Davis, I. S. (2026). Machine learning classifiers for automatic classification of foot strike patterns from 2D video. _Sports Biomechanics_, 1–15. [https://doi.org/10.1080/14763141.2026.2669133](https://doi.org/10.1080/14763141.2026.2669133)
 
 ## Using the classifier
 ### Requirements
